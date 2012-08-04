@@ -1,0 +1,17 @@
+<Window x:Class="OData_WPF_Client.WindowStandardGrid"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WindowStandardGrid" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:my="clr-namespace:OData_WPF_Client.MyXpoDataServiceReference" Loaded="Window_Loaded" d:DesignHeight="419" d:DesignWidth="636" SizeToContent="WidthAndHeight">
+    <Window.Resources>
+        <CollectionViewSource x:Key="personViewSource" d:DesignSource="{d:DesignInstance my:Person, CreateList=True}" />
+    </Window.Resources>
+    <StackPanel DataContext="{StaticResource personViewSource}">
+        <DataGrid AutoGenerateColumns="False" EnableRowVirtualization="True" ItemsSource="{Binding}" Name="personDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" >
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="firstNameColumn" Binding="{Binding Path=FirstName}" Header="First Name" Width="150" />
+                <DataGridTextColumn x:Name="lastNameColumn" Binding="{Binding Path=LastName}" Header="Last Name" Width="150" />
+                <DataGridTextColumn x:Name="oidColumn" Binding="{Binding Path=Oid}" Header="Oid" Width="50" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</Window>
