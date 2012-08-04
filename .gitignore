@@ -96,6 +96,9 @@ DocProject/Help/html
 # Click-Once directory
 publish
 
+#Azure publish credentials
+*.publishsettings
+
 # Others
 [Bb]in
 [Oo]bj
