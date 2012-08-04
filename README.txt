@@ -24,6 +24,9 @@ The OData_Server project publishes access to the created database via an OData s
 
 The OData_Server_InMemory project is introduced to simplify deployment and testing and doesn't use a real database. Instead, a DataSet object is used to hold tables and records and manage incoming read/update requests.
 
+The OData_Server_InMemory.Azure project is generated automatically by the 'Publish to Windows Azure...' menu item for the 'OData_Server_InMemory' project.
+I have removed credentials and settings files from this project so you need to include your own information to use this project.
+
 The OData_Client_Console is a .Net console application that connects to the published OData service via Linq and a customized DataServiceQuery object.
 
 The OData_WPF_Client project is a .NET WPF application that contains DevExpress DXGrid control and a standard Grid control. Both controls are bound to the OData service and shows the same information.
