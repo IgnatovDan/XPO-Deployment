@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_PersistentClassesLibrary", "MyXpoClassLibrary\_PersistentClassesLibrary.csproj", "{A406FBA5-8E7C-4EE3-9338-3A2E14DE265B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_Server_Console", "Server_WCFConsole\WCF_Server_Console.csproj", "{F267D664-ED6E-462C-A122-CA8D7B1BCD57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_Server_Console", "WCF_Server_Console\WCF_Server_Console.csproj", "{F267D664-ED6E-462C-A122-CA8D7B1BCD57}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_Client_Console", "WCF_Client_Console\WCF_Client_Console.csproj", "{32059C7D-0CB6-4720-B820-66651661CCF7}"
 EndProject
