@@ -1,7 +1,9 @@
 #################
-## Locals
+## Custom
 #################
 _Dlls/
+*.publishsettings
+*.azurePubxml
 
 
 #################
@@ -101,9 +103,6 @@ DocProject/Help/html
 
 # Click-Once directory
 publish
-
-#Azure publish credentials
-*.publishsettings
 
 # Others
 [Bb]in
